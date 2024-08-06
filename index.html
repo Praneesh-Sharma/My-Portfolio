@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/22faf303ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#domains">Domains</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span class="color-wave"><b>Praneesh Sharma</b></span></h1>
+                <p>Data Analytics | Artificial Intelligence</p>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------About-------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about">
+                    <div class="about-col-1">
+                        <img src="images/potrait.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p style="font-size: 18px; text-align: justify;">I am currently a senior pursuing my Bachelor's in Computer Science with a focus on artificial intelligence and data science. I have a keen interest in machine learning, artificial intelligence, and mathematics, combining programming, data analysis, and statistics to solve real-world problems. I am constantly seeking new challenges and opportunities, particularly in the realm of technology and innovation. 
+                            <br><br>
+                            Alongside my academic journey, I've delved into entrepreneurship, gaining valuable experience in project management, leadership, and creative problem-solving. This diverse background equips me to tackle a wide range of projects and environments, ready to contribute effectively to any innovative endeavor.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>Python, Java, C, C++, Svelte, HTML, CSS</li>
+                                <li><span>Developer Tools</span><br>Pycharm, Power BI, Colab, Jupyter, Kaggle, GitHub</li>
+                                <li><span>Cloud/Databases</span><br>Google Cloud Platform, Amazon Web Services, SQL, PostGRE</li>
+                                <li><span>Technical Skills</span><br>Machine Learning, Deep Learning, Data Analysis, Research, Git, Latex</li>
+                                <li><span>Soft Skills</span><br>Problem Solving, Teamwork, Adaptability, Leadership</li>
+                                <li><span>Area of Interests</span><br>Blockchain, Web3</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Data Science Intern</span><br>Celebal Technologies</li>
+                                <li><span>Premier Blockchain Summer Intern</span><br>Timechain Summer of Code</li>
+                                <li><span>Research Intern</span><br>Kalinga Institute of Industrial Technology</li>
+                                <li><span>Developer Virtual Intern</span><br>Salesforce</li>
+                                <li><span>Summer Trainee</span><br>Hindustan Petroleum Corporation Limited</li>
+                                <li><span>Research Intern</span><br>Indian Institute of Information Technology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>École Nationale Supérieure de l'Électronique et de ses Applications, Cergy, France</span><br>Semester Exchange Program</li>
+                                <li><span>Kalinga Institute of Industrial Technology, Bhubaneshwar, India</span><br>Bachelor Of Technology (Computer Science Engineering)</li>
+                                <li><span>Delhi Public School, Navi Mumbai, India</span><br>High School Diploma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------Domains-------------------------- -->
+
+    <div id="domains">
+        <div class="container">
+            <h1 class="sub-title">My Domains</h1>
+            <div class="domain-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Data Analytics</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim nihil perferendis, labore fugiat distinctio recusandae numquam culpa. Soluta ipsum dignissimos explicabo quod beatae. Laudantium fuga minima culpa doloribus ea.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim nihil perferendis, labore fugiat distinctio recusandae numquam culpa. Soluta ipsum dignissimos explicabo quod beatae. Laudantium fuga minima culpa doloribus ea.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim nihil perferendis, labore fugiat distinctio recusandae numquam culpa. Soluta ipsum dignissimos explicabo quod beatae. Laudantium fuga minima culpa doloribus ea.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------Portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/trafficLights.jpg">
+                    <div class="layer">
+                        <h3>Smart Traffic Automation System</h3>
+                        <p>Empowering urban transportation, the Smart Traffic Automation System utilizes OpenCV and deep learning algorithms to strategically regulate traffic dynamics. Through real-time video analysis, it optimizes signal sequencing, identifies congestion patterns, and enhances road safety, contributing to the advancement of efficient and secure
+                            urban mobility solutions. Additionally, it provides trends in traffic on a hourly, daily, weekly as well as a monthly
+                            basis to perform analytics. Emergency vehicles are given priority.</p>
+                        <a href="https://github.com/Praneesh-Sharma/Smart-Traffic-Automation-System" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/oilRefinery.jpg">
+                    <div class="layer">
+                        <h3>Predictive Modelling of Refinery Chemical Demand</h3>
+                        <p>LSTM & ANN based model was deployed to map consumption of a specific chemical inside refinery and model was
+                            used to define weekly demand of chemical basis which external procurement was planned and schedule. Model is
+                            currently being used for essential chemical procurement within refinery.</p>
+                        <a href="https://github.com/Praneesh-Sharma/Caustic-Consumption-Prediction" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/music.jpg">
+                    <div class="layer">
+                        <h3>CollabMP3</h3>
+                        <p>CollabMP3, driven by K-Nearest Neighbors (KNN) algorithm. Leveraging user preferences and real-time data,
+                            it intelligently suggests live music events tailored to individual tastes. Enhancing music discovery experiences, it
+                            redefines personalized event recommendations for music enthusiasts. It can connect to the user’s spotify account
+                            and recommend tracks based on the user’s real time music track.</p>
+                        <a href="https://github.com/Praneesh-Sharma/CollabMP3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden work items -->
+            <div class="work-list more-work" id="moreWork" style="display: none;">
+                <div class="work">
+                    <img src="images/network.jpg">
+                    <div class="layer">
+                        <h3>Anamoly Detection in Traffic Network</h3>
+                        <p>This project implements unsupervised learning techniques for anomaly detection in network traffic data. It utilizes two powerful methods: Isolation Forests and Autoencoders. These techniques aim to identify unusual patterns potentially indicative of security breaches or system malfunctions.</p>
+                        <a href="https://github.com/Praneesh-Sharma/Anomaly-Detection-in-Network-Traffic" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/FaceDetection.jpeg">
+                    <div class="layer">
+                        <h3>Face Detection using Flask</h3>
+                        <p>Flask-based web application that performs real-time face detection using computer vision. The app processes images uploaded by users, detects faces, and displays results, providing a simple interface for integrating facial recognition into web services.</p>
+                        <a href="https://github.com/Praneesh-Sharma/face-detection-using-flask" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo.jpg">
+                    <div class="layer">
+                        <h3>ToDo using NestJs</h3>
+                        <p>A task management app using NestJS that enables users to add, update, and delete tasks. The application features RESTful APIs for CRUD operations, user authentication, and task categorization, offering a robust and scalable solution for managing daily to-dos.</p>
+                        <a href="https://to-do-using-nest-js.vercel.app/swagger#/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+            <button id="showMoreBtn" onclick="toggleMoreWork()">Show More</button>
+        </div>
+    </div>
+
+<!-- -------------------------Contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" >
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>praneeshsharma30@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/praneesh-sharma/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Praneesh-Sharma" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discordapp.com/users/1742/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/cool_prawns/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/11e8qNDRa1HHJj_oeYe_vcA7Q_jb39KCz/view" target="_blank" id="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" id="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname, event){
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function toggleMoreWork() {
+        var moreWork = document.getElementById('moreWork');
+        var showMoreBtn = document.getElementById('showMoreBtn');
+        
+        if (moreWork.style.display === "none") {
+            moreWork.style.display = "flex";
+            showMoreBtn.textContent = "Show Less";
+        } else {
+            moreWork.style.display = "none";
+            showMoreBtn.textContent = "Show More";
+        }
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzrA8ZAcrdckQF8an8CcXhMkUzf9yX5bn8iZXfjoyuKTIBgwyYSGcyKd825uEEx5yh7A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        document.getElementById('btn2').addEventListener('click', function() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>
